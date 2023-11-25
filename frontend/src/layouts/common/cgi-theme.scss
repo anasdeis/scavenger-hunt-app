@@ -1,0 +1,62 @@
+// colors
+$color-primary: #5236ab;
+$color-primary-variant: #3700b3;
+$color-primary-cyan: #1776ea;
+$color-light-primary: #1573fe;
+
+$color-secondary: #e6e3f3;
+$color-primary-dark: #200a58;
+$color-grey-marked: #c7c6c6;
+
+$color-success: #1ab977;
+$color-warning: #ffac25;
+$color-error: #e31937;
+
+$color-text-error-bg: rgba(227, 25, 55, 0.2);
+$color-dropdown-error-bg: rgba(227, 25, 55, 0);
+
+$color-black: #000000;
+$color-white: #ffffff;
+
+$color-grey-700: #151515;
+$color-grey-600: #333333;
+$color-grey-500: #a8a8a8;
+$color-grey-450: #b7b7b7;
+$color-grey-400: #d2d2d2;
+$color-grey-350: #e6e3f3;
+$color-grey-300: #e8e8e8;
+$color-grey-200: #efefef;
+$color-grey-100: #f8f8f8;
+
+$header-height: 200px;
+$header-height-login: 100px;
+$footer-height: 105px;
+
+// inputs
+$input: (
+        xs: 135px,
+        sm: 158px,
+        md: 250px,
+        lg: 345px,
+        desktop-md: 365px,
+        desktop-lg: 540px
+);
+
+$input-height: 39px;
+
+$spacer: (
+        xs: 1rem,
+        sm: 2rem,
+        md: 3rem,
+        lg: 4rem,
+        xl: 5rem,
+        xxl: 6rem
+);
+
+// bootstrap breakpoints
+$grid-breakpoints: (
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px
+);

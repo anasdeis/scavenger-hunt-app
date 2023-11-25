@@ -1,0 +1,53 @@
+
+.profil-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+
+    .user-avatar{
+        margin-bottom: 10px;
+    }
+
+    .avatar-pic{
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+    }
+
+    .name-user{
+        font-size: 30px;
+        margin-bottom: 5px;
+        color: #313131
+    }
+    .grade-user{
+        display: flex;
+        padding: 2px;
+        margin-bottom: 5px;
+        color: #313131
+    }
+    .results{
+        padding: 2px;
+        display: flex;
+        color:var(--violetCgi)
+    }
+
+    .banner-container{
+        position: relative;
+        display: flex;
+    }
+    .avatar-pic{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .banner-pic{
+        border-radius: 20px;
+
+        height: 70px;
+    }
+
+}

@@ -1,0 +1,80 @@
+.admin-container {
+  display: flex;
+  justify-content: center;
+  .form-container {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 100%;
+
+    .logo-cgi {
+      height: 30px;
+    }
+
+   .header-admin {
+      color : white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+
+      .admin-title {
+        color : black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .admin-pictogram {
+          color: #FFF;
+          height: 18px;
+          margin-right: 0px;
+        }
+      }
+
+    }
+
+  }
+
+  .actions-container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+
+    .action-item{
+      border: solid white  1px;
+      border-radius: 10px;
+      margin: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 10px;
+      font-size: 25px;
+
+      .action-item-text{
+        font-size: 18px;
+        color:black;
+        margin-left:5px;
+      }
+
+      .action-item-img{
+        font-size: 40px;
+        color: black;
+      }
+    }
+
+  }
+
+  .rank-container{
+    background-color: var(--violetCgi);
+    color:white !important;
+      .user-name{
+        margin-right: 10px;
+        color:white !important;
+        overflow-wrap: break-word;
+      }
+  }
+}

@@ -1,0 +1,45 @@
+
+.moves{
+  transform: scale(1.5);
+  transition: 1s;
+  opacity: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.stops{
+  transform: scale(0.8);
+  transition: 3s;
+  opacity: 0;
+}
+
+.text-animation{
+  display: flex;
+  justify-content: center;
+}
+
+.user-picture1{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user-picture2{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: -50px;
+
+}
+
+.discover-text{
+  font-weight: 900;
+  width: 100%;
+  margin-bottom: 50px;
+  color:white;
+  font-size: 70px;
+  -webkit-text-stroke: 5px #E31937; /* width and color */
+  text-shadow: 1px 1px 2px black;
+
+}

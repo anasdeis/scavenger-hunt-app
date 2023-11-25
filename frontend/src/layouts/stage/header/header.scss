@@ -1,0 +1,33 @@
+.header-stage{
+    font-size: 18px;
+    padding: 15px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    color:black;
+
+    .logo-cgi-header{
+        margin-left: 10px;
+        height: 20px;
+    }
+
+    .qr-code{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .classement{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .HandButton:hover{
+        cursor: pointer;
+    }
+
+    .QRCode > svg {
+    }
+}

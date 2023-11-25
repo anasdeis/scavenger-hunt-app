@@ -1,0 +1,55 @@
+
+
+.page-container{
+  display: flex;
+  justify-content: center;
+
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+    width: 350px;
+  }
+  .cgi-logo{
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 50px;
+    }
+  }
+
+  a{
+    color: #91dcf5;
+    text-decoration: none;
+  }
+
+  .login-placeholder-text{
+    font-family : "system-ui";
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+
+  .button-container{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-control-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .input-button-login{
+      width: 80%;
+    }
+    .MuiButtonBase-root:not([disabled]){
+      background-color: var(--violetCgi) !important;
+      color: white !important;
+    }
+  }
+}

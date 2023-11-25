@@ -1,0 +1,101 @@
+.dashboard-scene {
+  width: 100%;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  .avatar-user{
+    border-radius: 50%;
+  }
+
+  .logo-cgi{
+    width: 500px;
+    position: absolute;
+    top:20px;
+    left: 20px;
+    z-index: 1;
+    opacity: 0.5;
+  }
+
+  #myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: hue-rotate(520deg) blur(5px) brightness(2) ;
+  }
+
+  .content {
+    overflow: hidden;
+
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    //align-items: center;
+    //justify-content: center;
+    gap: 5vmin;
+    padding: 3vmin;
+    height: 40vw;
+    width: 80vw;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+  }
+
+  .profile-side{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .avatar-user{
+    height: 4vw;
+    width: 4vw;
+    margin-right: 1vw;
+  }
+
+  .ranking{
+    gap:3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .ranking-row{
+    justify-content: flex-start;
+    padding:1vw;
+    gap:2vw;
+    border: solid #49d629 2px ;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-width: 40vw;
+    box-shadow: 0 0 .2rem #49d629,
+    0 0 .1rem #49d629,
+    0 0 0rem #49d629,
+    0 0 0.1rem #49d629,
+    0 0 1.8rem #49d629,
+    inset 0 0 1.3rem #49d629;
+  }
+
+  .nom-complet {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 15vw;
+  }
+
+  .stat-side {
+    margin-left: auto;
+    font-size: 3vw;
+  }
+
+  .selectOptions {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: larger;
+  }
+}
+
