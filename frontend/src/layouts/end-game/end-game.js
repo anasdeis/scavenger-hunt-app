@@ -13,9 +13,10 @@ function EndGame(props) {
 
   useEffect(() => {
     dispatch(RequestGetUserListAll());
-    setInterval(() => {
+    const interval = setInterval(() => {
       dispatch(RequestGetUserListAll());
     }, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   return (

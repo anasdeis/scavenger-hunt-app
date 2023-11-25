@@ -12,7 +12,7 @@ function Header(props) {
   var user = JSON.parse(sessionStorage.getItem('user'));
   const userList = useSelector((state) => state.slider.userList);
   const showQr = useSelector((state) => state.gameContext.showQr);
-  var SIZE = Math.round((userList.filter((u) => u.discovered).length / userList.length) * 100);
+  var SIZE = Math.round((userList.filter((u) => u.discovered).length / (userList.length - 1)) * 100);
 
   return (
     <div className="header-stage">

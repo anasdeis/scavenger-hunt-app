@@ -41,9 +41,10 @@ function Modale(props) {
 
   useEffect(() => {
     dispatch(RequestGetGameplay());
-    setInterval(() => {
+    const interval = setInterval(() => {
       dispatch(RequestGetGameplay());
     }, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   return (

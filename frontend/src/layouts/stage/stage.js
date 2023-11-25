@@ -26,10 +26,11 @@ function Stage(props) {
   useEffect(() => {
     dispatch(getGameControlRequest());
     dispatch(getUsersList());
-    setInterval(() => {
+    const interval = setInterval(() => {
       dispatch(getUsersList());
       dispatch(getGameControlRequest());
     }, 50000);
+    return () => clearInterval(interval);
   }, []);
 
   return (

@@ -38,10 +38,11 @@ function Dashboard(props) {
   useEffect(() => {
     dispatch(RequestGetTentatives());
     dispatch(RequestGetUserListAll());
-    setInterval(() => {
+    const interval = setInterval(() => {
       dispatch(RequestGetTentatives());
       dispatch(RequestGetUserListAll());
     }, 10000);
+    return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {

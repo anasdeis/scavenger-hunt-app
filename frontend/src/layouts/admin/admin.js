@@ -19,9 +19,10 @@ function Admin(props) {
 
   useEffect(() => {
     dispatch(RequestGetUserListAll());
-    setInterval(() => {
+    const interval = setInterval(() => {
       dispatch(RequestGetUserListAll());
     }, 5000);
+    return () => clearInterval(interval);
   }, []);
 
   var play = useSelector((state) => state.gameControl.play);
@@ -110,9 +111,11 @@ function Admin(props) {
         </div>
 
         <div className="participants-container">
-          {userList.map((user, idx) => {
-            return <RankRow total={userList.length} index={idx} user={user} />;
-          })}
+          {[...userList]
+            ?.sort((a, b) => b.nbFound - a.nbFound)
+            .map((user, idx) => {
+              return <RankRow total={userList.length} index={idx} user={user} />;
+            })}
         </div>
       </div>
     </div>

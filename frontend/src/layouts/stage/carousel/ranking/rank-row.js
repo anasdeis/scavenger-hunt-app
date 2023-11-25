@@ -8,7 +8,7 @@ function RankRow(props) {
         <div style={{ marginRight: '5px' }} className="rank">
           <b>{'#' + parseInt(props.index + 1)}</b>
         </div>
-        <div style={{ overflowWrap: 'anywhere' }} className="user-name">
+        <div style={{ overflowWrap: 'anywhere', marginRight: '5px' }} className="user-name">
           {' '}
           {props.user.completeName}
         </div>
@@ -16,7 +16,7 @@ function RankRow(props) {
       <div className="user-name" style={{ color: 'var(--violetCgi)' }}>
         {' '}
         <b>
-          {props.user.nbFound + '/' + props.total} trouvé{props.user.nbFound > 1 ? 's' : ''}
+          {props.user.nbFound + '/' + (props.total - 1)} trouvé{props.user.nbFound > 1 ? 's' : ''}
         </b>
       </div>
     </div>
